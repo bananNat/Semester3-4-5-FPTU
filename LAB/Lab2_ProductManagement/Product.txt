@@ -1,0 +1,5 @@
+P10,  kemdau, 5000.000000, 90,  Available
+P2,   comchay, 1000.000000, 50,   Not Available
+P9,  kemsocola, 1000.000000, 20,  Available
+P3,   comtrung, 5000.000000, 20,   Available
+P1,   kemchuoi, 5000.000000, 10,   Available
