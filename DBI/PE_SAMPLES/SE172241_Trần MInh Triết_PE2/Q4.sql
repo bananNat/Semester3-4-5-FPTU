@@ -1,0 +1,2 @@
+select p.SubCategoryID, s.SubCategoryName, count(*) as NumberOfProducts from SubCategory s left join Product p on s.ID = p.SubCategoryID
+group by p.SubCategoryID, s.SubCategoryName having count(*) > 100 order by NumberOfProducts DESC

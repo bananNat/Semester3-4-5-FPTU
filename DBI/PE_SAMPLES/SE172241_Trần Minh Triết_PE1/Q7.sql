@@ -1,0 +1,1 @@
+select EmployeeID, FirstName, LastName, Salary from Employees where Salary > (select Salary from Employees where FirstName = 'Janette' AND LastName = 'King')

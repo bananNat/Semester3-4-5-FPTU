@@ -1,0 +1,1 @@
+SELECT EmployeeID, FirstName, LastName, Salary FROM Employees where Salary > 9000 and Salary < 15000

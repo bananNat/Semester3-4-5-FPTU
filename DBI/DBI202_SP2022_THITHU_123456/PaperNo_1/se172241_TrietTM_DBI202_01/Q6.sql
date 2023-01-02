@@ -1,0 +1,2 @@
+select top 1 p1.ProductID, p1.Name, sum(Quantity) as TotalQuantity from Product p1 inner join ProductInventory p2 on p1.ProductID = p2.ProductID
+group by p1.ProductID, p1.Name order by sum(Quantity) desc

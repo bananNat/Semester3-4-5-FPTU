@@ -1,0 +1,1 @@
+select l.LocationID, StreetAddress, City, StateProvince, CountryID, count(d.LocationID) as NumberOfDepartments from Locations l left join Departments d on l.LocationID = d.LocationID group by l.LocationID,d.LocationID, StreetAddress, City, StateProvince, CountryID order by NumberOfDepartments ASC, LocationID DESC

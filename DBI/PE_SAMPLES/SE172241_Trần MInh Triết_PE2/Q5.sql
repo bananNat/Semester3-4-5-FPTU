@@ -1,0 +1,1 @@
+select p.ID as ProductID, p.ProductName, o.Quantity from OrderDetails o inner join Product p on o.ProductID = p.ID where Quantity = (select max(MaxQuantity) from (select max(quantity) as MaxQuantity from OrderDetails group by OrderID) as Maximum)

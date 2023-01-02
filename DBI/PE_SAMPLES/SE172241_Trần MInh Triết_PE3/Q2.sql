@@ -1,0 +1,2 @@
+select f1.film_id, f1.title, f1.length, f1.rating from film f1 inner join film_category f2 on f1.film_id = f2.film_id inner join category c on c.category_id = f2.category_id
+where c.name = 'Documentary' and f1.length >= 180 order by film_id

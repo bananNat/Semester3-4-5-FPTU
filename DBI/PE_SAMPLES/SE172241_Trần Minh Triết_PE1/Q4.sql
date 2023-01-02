@@ -1,0 +1,1 @@
+select JobID, JobTitle, max_salary from Jobs where JobTitle like '%Manager' order by max_salary ASC, JobID DESC

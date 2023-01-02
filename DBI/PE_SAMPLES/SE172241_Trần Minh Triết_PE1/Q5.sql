@@ -1,0 +1,1 @@
+select e.EmployeeID, e.FirstName, e.LastName, j.JobTitle, d.DepartmentName, year(e.HireDate) as yearHireDate from Employees e inner join Jobs j on e.JobID = j.JobID inner join Departments d on d.DepartmentID = e.DepartmentID where year(e.HireDate) = 2004

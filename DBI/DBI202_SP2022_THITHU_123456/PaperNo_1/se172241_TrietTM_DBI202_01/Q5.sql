@@ -1,0 +1,2 @@
+select p2.ModelID, p2.Name as ModelName, count(ProductID) as NumberOfProducts from Product p1 right join ProductModel p2 on p1.ModelID = p2.ModelID group by p2.ModelID, p2.Name
+having p2.name like 'Mountain%' or p2.name like 'ML Mountain%' order by count(ProductID) DESC, ModelName ASC

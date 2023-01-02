@@ -1,0 +1,1 @@
+select e.JobID, j.JobTitle, count(e.JobID) as NumberOfEmployees, avg(Salary) as AverageOfEmployees from Employees e left join Jobs j on e.JobID = j.JobID group by e.JobID, j.JobTitle having count(e.JobID) >= 20 order by AverageOfEmployees ASC

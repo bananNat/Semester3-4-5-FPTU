@@ -1,0 +1,2 @@
+select o.CustomerID, c.CustomerName ,count(*) as NumberOfOrders from Orders o inner join Customer c on o.CustomerID = c.ID group by CustomerID , c.CustomerName having count(*) = (select max(Maximum) from (select count(*) as Maximum from Orders group by CustomerID ) as MaxOrder
+)
